@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment1-2</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="put imp words from ur webpage">
+        <meta name="author" content="put name of author">
+        <meta name="description" content="put short descr">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+          <div class="row">
+            <div class="mt-5 col-12 col-md-7">
+                <img class="green-tree" id="image" src="images/green plant.jpg" alt="green plant">
+            </div>
+            <section class="col-12 col-md-5">
+            <h1 class="mt-5">Form Validation</h1>
+            <form id="myForm" class="form-details" onsubmit="return validateForm()" action="success.html">
+                <div class="mb-3">
+                  <label for="fname">First Name</label>
+                  <input type="text" class="form-control" id="fname" onblur="validate1()" />
+                  <p id="fnameErrMsg" class="error-message"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lname" onblur="validate2()" />
+                    <p id="lnameErrMsg" class="error-message"></p>
+                  </div>
+                <div class="mb-3">
+                  <label for="uname">Username</label>
+                  <input type="text" class="form-control" id="uname" onblur="validate3()" />
+                  <p id="unameErrMsg" class="error-message"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="pass">Password</label>
+                    <input type="password" class="form-control" id="pass" onblur="validate4()"  />
+                    <p id="passErrMsg" class="error-message"></p>
+                  </div>
+                  <div class="mb-3">
+                    <label for="cpass">Confirm Password</label>
+                    <input type="password" class="form-control" id="cpass" onblur="validate5()" />
+                    <p id="cpassErrMsg" class="error-message"></p>
+                  </div>  
+                <button type="button" class="btn btn-primary">Submit</button>
+              </form>
+            </section>
+            </div>
+          </div>
+        <script src="assignment.js"></script>
+    </body>
+</html>
